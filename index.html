@@ -98,6 +98,18 @@ document.querySelector('.nav-toggle').addEventListener('click', function() {
       </script>
       <p>Уважаемые соседи, наши дома оснащены сложными инженерными системами: ГВС, теплоснабжение, канализация, все с нестандартными технологическими узлами, требующими специализированных компетенций. ВК Комфорт располагает собственной аварийной службой и накопленной экспертизой. Смена управляющей организации без должного технического погружения создаёт реальные риски: от затяжных аварий до необоснованных расходов, которые лягут на плечи собственников.</p>
 
+      <div id="tsn-funds-block" style="position:relative">
+        <h3 style="color:#dc2626">На какие средства ТСН планирует содержать ЖК Технопарк?</h3>
+        <img src="/images/1.png" alt="Скриншот" class="actor-screenshot fly-target" style="max-width:400px;margin:12px 0">
+        <p>Несмотря на то, что в течение года Правление ТСН собирает членские взносы, ведущий активист Ярцев Д. (Консорциум Улей) не в состоянии распечатать 100 листов А4.</p>
+        <img src="/images/2.png" alt="Скриншот" class="actor-screenshot fly-target" style="max-width:400px;margin:12px 0">
+        <p>Группа поддержки в лице двух активисток готовы сделать распечатки за счет РАБОТОДАТЕЛЯ! Даже не за свой счет. Собственникам апартаментов хотелось бы знать, будут ли работодатели активистов и дальше оплачивать нужды ТСН!</p>
+        <div style="margin-top:14px">
+          <a href="#" id="hide-autobugs-btn" onclick="hideAutobugs();return false;">&#127882; Скрыть мух</a>
+          <a href="#" id="show-autobugs-btn" style="display:none" onclick="showAutobugs();return false;">&#127890; Вернуть Улей</a>
+        </div>
+      </div>
+
       <h3>На чем выстраивают репутацию активисты и члены ТСН</h3>
       <ol>
         <li>Критика управляющей компании носит преимущественно эмоциональный характер, конструктивных предложений за ней не следует.</li>
@@ -143,25 +155,8 @@ document.querySelector('.nav-toggle').addEventListener('click', function() {
   <div class="container">
     <h2 class="section-title"><img src="/images/pepper.svg" alt="" class="pepper-icon"> Актуальные вопросы</h2>
     <div class="territory-card">
-      <h3>Работа шлагбаума<span class="court-date-inline">05 мая 2026</span></h3>
-      <p>В настоящее время шлагбаум на въезд работает в обычном режиме: номера считываются автоматически. Для гостей шлагбаум открывает охранник.</p>
-    </div>
-    <div class="territory-card">
-      <h3>Провал на дороге между 5-ым и 4-ым корпусами</h3>
-      <p>29 апреля в ЖК приезжали эксперты в рамках назначенной судом экспертизы. Они осмотрели весь участок дороги, чтобы проверить, нет ли других возможных провалов.</p>
-      <p>Управляющая компания &laquo;ВК Комфорт&raquo; добивается ремонта провала. Данный участок муниципальный (кадастровый № 77:02:0007003:107) и должен ремонтироваться за счет Управы Даниловского района, а не собственников ЖК.</p>
-      <p>Ждем решения суда. Проверять статус можно по <a href="https://kad.arbitr.ru/Card/9a3f507b-b4b5-4ba2-8ea3-0d4c3efb0e1b" target="_blank" rel="noopener">ссылке</a>.</p>
-    </div>
-    <div class="territory-card">
-      <h3>Вывоз мусора</h3>
-      <p>С 1 апреля было увеличено количество вывоза вторсырья. На текущий момент проблему с переполненными мусорными баками удалось решить.</p>
-    </div>
-    <div class="territory-card">
-      <h3>Как работает шлагбаум и система пропусков</h3>
-      <p>На въезде установлен автоматический шлагбаум с системой Entercam. Постоянные пропуска распознаются автоматически, их оформляют и вносят в базу через центральный офис управляющей компании.</p>
-      <p>На случай сбоев у охраны есть резервный файл Excel, который регулярно обновляется. Он используется, когда автоматика не срабатывает: при поломках, грязных номерах или если автомобиль встаёт под острым углом к камере, охранники вручную сверяются со списком.</p>
-      <p>Гостевые пропуска фиксируются в отдельном журнале, охрана периодически обходит парковку и проверяет наличие гостевых машин.</p>
-      <p>Система не идеальна — случаи проезда без пропуска исключить нельзя. Но когда члены ТСН говорят об &laquo;автоматизации шлагбаума&raquo; (см. <a href="#solabuto">скриншот Солабуто О.</a>), речь идёт о дополнительном сборе не в пользу жильцов, а в карман ТСН.</p>
+      <h3>Подача отопления<span class="court-date-inline">5 октября</span></h3>
+      <img src="/images/otoplenie.png" alt="Подача отопления" style="margin-top:12px;max-width:340px">
     </div>
   </div>
 </section>
@@ -485,6 +480,14 @@ document.querySelector('.nav-toggle').addEventListener('click', function() {
 #hide-bugs-btn{display:none;position:fixed;bottom:24px;right:24px;z-index:10000;font-size:.82rem;color:#dc2626;cursor:pointer;padding:8px 18px;border-radius:20px;background:#fef2f2;border:1px solid #fecaca;text-decoration:none;box-shadow:0 4px 16px rgba(0,0,0,.12);animation:pulse-btn 1.5s ease-in-out infinite}
 #hide-bugs-btn:hover{color:#fff;background:#dc2626;border-color:#dc2626;animation:none}
 @keyframes pulse-btn{0%,100%{background:#fef2f2}50%{background:#fee2e2}}
+#hide-autobugs-btn,#show-autobugs-btn{display:inline-block;font-size:.82rem;color:#dc2626;cursor:pointer;padding:7px 16px;border-radius:16px;background:#fef2f2;border:1px solid #fecaca;text-decoration:none;box-shadow:0 2px 8px rgba(0,0,0,.1);white-space:nowrap}
+#hide-autobugs-btn:hover,#show-autobugs-btn:hover{color:#fff;background:#dc2626;border-color:#dc2626}
+#fly-modal-overlay{display:none;position:fixed;inset:0;z-index:10001;background:rgba(0,0,0,.45);align-items:center;justify-content:center}
+#fly-modal-overlay.active{display:flex}
+#fly-modal{background:#fff;border-radius:14px;padding:28px 32px;max-width:480px;width:90%;box-shadow:0 16px 48px rgba(0,0,0,.2);position:relative;line-height:1.65;font-size:.92rem;color:#1e293b}
+#fly-modal h3{font-size:1.05rem;font-weight:800;color:#dc2626;margin-bottom:12px}
+#fly-modal-close{position:absolute;top:10px;right:14px;background:none;border:none;font-size:1.3rem;cursor:pointer;color:#94a3b8;line-height:1}
+#fly-modal-close:hover{color:#1e293b}
 </style>
 <script>
 var swarmActive=false,swarmKilled=false,bugList=[];
@@ -634,6 +637,125 @@ function launchBee(el){
   setTimeout(function(){hideBugs();swarmKilled=false;swarmActive=false},40000);
 }
 </script>
+
+<script>
+(function(){
+  var block=document.getElementById('tsn-funds-block');
+  if(!block)return;
+  var cont=document.getElementById('swarm-container');
+  var autobugs=[];
+
+  function makeSVG(sz,isBee){
+    var c1=isBee?'#f59e0b':'#1a1a1a',c2=isBee?'#2a2a2a':'#2d2d2d',eye=isBee?'#2a2a2a':'#8b0000';
+    return '<svg width="'+sz+'" height="'+sz+'" viewBox="0 0 28 28" fill="none">'
+      +'<ellipse cx="14" cy="17" rx="5.5" ry="7" fill="'+c2+'"/>'
+      +'<ellipse cx="14" cy="17" rx="4.5" ry="6" fill="'+c1+'"/>'
+      +(isBee?'<rect x="9.5" y="15" width="9" height="2" rx="1" fill="#2a2a2a"/><rect x="9.5" y="19" width="9" height="2" rx="1" fill="#2a2a2a"/>':'')
+      +'<circle cx="14" cy="10" r="4" fill="'+c2+'"/>'
+      +'<circle cx="12.5" cy="9" r="1.6" fill="'+eye+'"/><circle cx="15.5" cy="9" r="1.6" fill="'+eye+'"/>'
+      +'<ellipse cx="7" cy="11" rx="5.5" ry="2.5" fill="rgba(180,200,220,0.4)" transform="rotate(-20 7 11)" class="bw"/>'
+      +'<ellipse cx="21" cy="11" rx="5.5" ry="2.5" fill="rgba(180,200,220,0.4)" transform="rotate(20 21 11)" class="bw2"/>'
+      +'<line x1="12" y1="7" x2="10" y2="3" stroke="'+c2+'" stroke-width="0.8"/>'
+      +'<line x1="16" y1="7" x2="18" y2="3" stroke="'+c2+'" stroke-width="0.8"/>'
+      +'<line x1="10" y1="20" x2="7" y2="24" stroke="'+c2+'" stroke-width="0.7"/>'
+      +'<line x1="18" y1="20" x2="21" y2="24" stroke="'+c2+'" stroke-width="0.7"/>'
+      +'</svg>';
+  }
+
+  function getImgTargets(){
+    var imgs=block.querySelectorAll('.fly-target');
+    var targets=[];
+    imgs.forEach(function(img){
+      var r=img.getBoundingClientRect();
+      targets.push({left:r.left,top:r.top+window.scrollY,w:r.width,h:r.height});
+    });
+    return targets;
+  }
+
+  function pickTarget(){
+    var ts=getImgTargets();
+    if(!ts.length)return null;
+    var t=ts[Math.floor(Math.random()*ts.length)];
+    // у левого края картинки, чуть левее
+    return {x:t.left-15+Math.random()*40,y:t.top+10+Math.random()*(t.h-20)};
+  }
+
+  function wander(b){
+    var pt=pickTarget();
+    if(!pt)return;
+    var cx=parseFloat(b.style.left),cy=parseFloat(b.style.top);
+    var steps=100+Math.floor(Math.random()*80);
+    var step=0;
+    b.style.transition='none';
+    function mv(){
+      step++;var p=step/steps;
+      b.style.left=(cx+(pt.x-cx)*p+Math.sin(step*0.08)*12)+'px';
+      b.style.top=(cy+(pt.y-cy)*p+Math.cos(step*0.1)*8)+'px';
+      if(step<steps)requestAnimationFrame(mv);
+      else setTimeout(function(){wander(b)},400+Math.random()*1200);
+    }
+    requestAnimationFrame(mv);
+  }
+
+  setTimeout(function(){
+    var ts=getImgTargets();
+    if(!ts.length)return;
+    for(var i=0;i<3;i++){
+      var d=document.createElement('div');
+      d.className='bug';
+      var sz=18+Math.floor(Math.random()*10);
+      d.innerHTML=makeSVG(sz,Math.random()>0.5);
+      var t=ts[i%ts.length];
+      d.style.left=(t.left-15+Math.random()*40)+'px';
+      d.style.top=(t.top+window.scrollY+10+Math.random()*(t.h-20))+'px';
+      d.style.display='block';
+      cont.appendChild(d);
+      autobugs.push(d);
+      wander(d);
+    }
+  },800);
+
+  function spawnBugs(){
+    var ts=getImgTargets();
+    if(!ts.length)return;
+    for(var i=0;i<3;i++){
+      var d=document.createElement('div');
+      d.className='bug';
+      var sz=18+Math.floor(Math.random()*10);
+      d.innerHTML=makeSVG(sz,Math.random()>0.5);
+      var t=ts[i%ts.length];
+      d.style.left=(t.left-15+Math.random()*40)+'px';
+      d.style.top=(t.top+window.scrollY+10+Math.random()*(t.h-20))+'px';
+      d.style.display='block';
+      cont.appendChild(d);
+      autobugs.push(d);
+      wander(d);
+    }
+  }
+
+  window.hideAutobugs=function(){
+    autobugs.forEach(function(b){b.remove()});
+    autobugs=[];
+    document.getElementById('hide-autobugs-btn').style.display='none';
+    document.getElementById('show-autobugs-btn').style.display='inline-block';
+    document.getElementById('fly-modal-overlay').classList.add('active');
+  };
+
+  window.showAutobugs=function(){
+    document.getElementById('show-autobugs-btn').style.display='none';
+    document.getElementById('hide-autobugs-btn').style.display='inline-block';
+    spawnBugs();
+  };
+})();
+</script>
+
+<div id="fly-modal-overlay" onclick="if(event.target===this)this.classList.remove('active')">
+  <div id="fly-modal">
+    <button id="fly-modal-close" onclick="document.getElementById('fly-modal-overlay').classList.remove('active')">&times;</button>
+    <h3>Важно знать</h3>
+    <p>По закону ТСН обязано предоставить <strong>смету доходов и расходов</strong>. Прежде чем передавать им персональные данные и что-то подписывать, запросите этот документ. Узнайте, как ТСН планирует оплачивать расходы, задолженности собственников перед РСО, на какие средства поддерживать коммуникации.</p>
+  </div>
+</div>
 
 <script type="text/javascript">
     (function(m,e,t,r,i,k,a){
