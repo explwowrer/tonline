@@ -571,6 +571,10 @@ img {
   box-shadow: var(--shadow-sm);
 }
 
+.appeal-float-img-mobile {
+  display: none;
+}
+
 .appeal-card h2 {
   font-size: 1.25rem;
   font-weight: 800;
@@ -1759,10 +1763,16 @@ img {
   }
 
   .appeal-float-img {
-    float: none;
+    display: none;
+  }
+
+  .appeal-float-img-mobile {
+    display: block;
     width: 100%;
     max-width: 320px;
-    margin: 0 0 16px 0;
+    margin: 20px 0 16px 0;
+    border-radius: var(--radius-md);
+    box-shadow: var(--shadow-sm);
   }
 
   .appeal-card {
